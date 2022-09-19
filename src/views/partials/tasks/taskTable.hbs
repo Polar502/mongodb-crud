@@ -1,0 +1,30 @@
+{{! ciclo for in Handlebars }}
+<table>
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Titulo</th>
+      <th>Descripcion</th>
+      <th>Operaciones</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each tasks}}
+    <tr>
+        <td>{{@index}}</td>
+        <td>
+            {{title}}
+        </td>
+        <td>
+            {{description}}
+        </td>
+        <td>
+            <button>Hecha</button>
+            <button>Eliminar</button>
+            <button>Actualizar</button>
+        </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
