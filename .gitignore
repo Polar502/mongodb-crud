@@ -1,2 +1,8 @@
-node_modules
+# Environment variables
 .env
+
+# Node dependencies
+node_modules
+
+#b buil folders
+dist
