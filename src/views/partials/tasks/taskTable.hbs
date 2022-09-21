@@ -20,9 +20,15 @@
             {{description}}
         </td>
         <td>
-            <button>Hecha</button>
-            <a href="/delete/{{_id}}">Eliminar</a>
-            <a href="/edit/{{_id}}">Editar</a>
+            {{!-- conditional if in Handlebars --}}
+            {{#if done }}
+              <a href="/tasks/{{_id}}/toggleDone">Pendiente</a>
+            {{else}}
+             <a href="/tasks/{{_id}}/toggleDone">Hecha</a>
+            {{/if}} 
+
+            <a href="/tasks/{{_id}}/delete">Eliminar</a>
+            <a href="/tasks/{{_id}}/edit">Editar</a>
         </td>
     </tr>
     {{/each}}

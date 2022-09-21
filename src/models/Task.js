@@ -1,5 +1,6 @@
 import { Schema, model } from "mongoose";
 
+// Structure for the Task collection
 const taskSchema = new Schema(
   {
     title: {
