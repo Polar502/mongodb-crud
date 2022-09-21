@@ -1,6 +1,7 @@
 import app from "./app";
-import './database';
+import "./database";
+import { PORT } from "./config";
 
 // Router initial
-app.listen(3000);
-console.log("Express server listening on port 3000");
+app.listen(PORT);
+console.log("Express server listening on port ", PORT);
